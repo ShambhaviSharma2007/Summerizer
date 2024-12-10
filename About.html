@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Add Google Fonts links -->
+     <link
+     href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Satisfy&display=swap"
+     rel="stylesheet"
+   />
+   <link rel="stylesheet" href="./style.css" />
+   
+    <style>
+      .feature-card {
+        background-color: #f9f4ff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      .btn-primary {
+        background-color: #cb9df0;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .btn-primary:hover {
+        background-color: #9b72c6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div
+      class="text-6xl font-bold h-[9vh] w-full justify-center items-center flex bg-[#CB9DF0]"
+    >
+      <h1 class="main">Summarizer</h1>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div
+      class="nav h-[8vh] flex items-center justify-center w-full px-6 gap-16 font-bold text-2xl bg-[#F0C1E1]"
+    >
+      <div
+        class="border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out px-3"
+      >
+        <a href="./index.html">Home</a>
+      </div>
+      <div
+        class="border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out px-3 flex items-center gap-2"
+      >
+        <a href="./AboutUs.html"><h1>Contact</h1></a>
+      </div>
+      <div
+        class="border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out px-3 flex items-center gap-2"
+      >
+        <a href="./Register.html"><h1>Sign In</h1></a>
+      </div>
+      <div
+          class="border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out px-3 flex items-center gap-2"
+        >
+          <a href="./About.html"><h1>About</h1></a>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div class="bg-[#F9F4FF] min-h-[70vh] py-10 px-6">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-8 text-[#4A628A]">
+          About Summarizer
+        </h2>
+        <p class="text-lg text-gray-700 mb-6 text-center">
+          Summarizer is your go-to tool for condensing lengthy paragraphs into
+          concise and meaningful summaries. Whether you're a student, a
+          professional, or just someone looking to save time, Summarizer
+          provides an efficient and easy way to extract key points from any
+          text.
+        </p>
+
+        <!-- Features Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <div class="feature-card">
+            <h3 class="text-xl font-bold mb-3 text-[#4A628A]">
+              AI-Powered Summaries
+            </h3>
+            <p class="text-gray-600">
+              Our advanced AI algorithms analyze the text and deliver precise
+              summaries that retain the essence of the original content.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-xl font-bold mb-3 text-[#4A628A]">
+              Customizable Output
+            </h3>
+            <p class="text-gray-600">
+              Choose the summary length and format to suit your needs, whether
+              it's a brief overview or a detailed summary.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-xl font-bold mb-3 text-[#4A628A]">
+              Save Time and Effort
+            </h3>
+            <p class="text-gray-600">
+              Simplify complex information quickly, saving valuable time for
+              other tasks.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3 class="text-xl font-bold mb-3 text-[#4A628A]">
+              Supports Multiple Formats
+            </h3>
+            <p class="text-gray-600">
+              Upload text, PDFs, or articles, and get concise summaries
+              tailored to your preferences.
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-10">
+          <a href="./summary.html" class="btn-primary">
+            Get Started Now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      style="background-color: #f0c1e1; color: black; padding: 20px 0; text-align: center; bottom: 0; width: 100%"
+    >
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 15px">
+        <p style="margin: 0; font-size: large">
+          © 2024 Summarizer. All Rights Reserved.
+        </p>
+        <div
+          style="margin-top: 10px; display: flex; flex-direction: row; justify-content: center; align-items: center"
+        >
+          <!-- Facebook Icon -->
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            aria-label="Facebook"
+            style="margin: 0 10px"
+          >
+            <img
+              src="./images/facebook.png"
+              alt="Facebook"
+              style="width: 40px; height: 40px; transition: transform 0.3s ease"
+              onmouseover="this.style.transform='scale(1.2)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </a>
+
+          <!-- Twitter Icon -->
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            aria-label="Twitter"
+            style="margin: 0 10px"
+          >
+            <img
+              src="./images/twitter.png"
+              alt="Twitter"
+              style="width: 40px; height: 40px; transition: transform 0.3s ease"
+              onmouseover="this.style.transform='scale(1.2)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

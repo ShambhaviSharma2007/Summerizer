@@ -1,42 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About US</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div
+      class="text-6xl font-bold h-[9vh] w-full justify-center items-center flex bg-[#CB9DF0]"
+    >
+      <h1 class="main">Summerizer</h1>
+    </div>
 
-<body 
-    style="text-align: left;
-        background-color: rgb(155, 197, 245);
+    <!-- Navigation Bar -->
+    <div
+      class="nav h-[8vh] flex items-center justify-center w-full px-6 gap-16 font-bold text-2xl bg-[#F0C1E1]"
+    >
+      <div
+        class="border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out px-3"
+      >
+        <a href="./index.html">Home</a>
+      </div>
+      <div
+        class="border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out px-3 flex items-center gap-2"
+      >
+        <a href="./AboutUs.html"><h1>Contact</h1></a>
+      </div>
+      <div
+        class="border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out px-3 flex items-center gap-2"
+      >
+        <a href="./Register.html"><h1>Sign In</h1></a>
+      </div>
+      <div
+          class="border-b-2 border-transparent hover:border-black transition-all duration-300 ease-in-out px-3 flex items-center gap-2"
+        >
+          <a href="./About.html"><h1>About</h1></a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div
+      class="bg-cover bg-center flex flex-col items-center py-10 text-black"
+      style="
         background-image: url('https://images.pexels.com/photos/7134990/pexels-photo-7134990.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; height: 100vh;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding-bottom: 5rem;">
-        
-    <h1 ><b><u>About US</u></b></h1>
-    <div style="border: 1px solid black; width: 500px; text-align: left; margin-left: auto; margin-right: auto ; ">
-    <ol type="1">
-        <li style="font-size: 20px;">SHAMBHAVI SHARMA:</li>
-        <ul type="square">
-            <li>PHONE - +91 98701 61355 </li>
+      "
+    >
+      <h2 class="text-4xl font-bold underline mb-8">Contact</h2>
+      <div
+        class="bg-white p-6 rounded-lg shadow-lg text-black w-[80%] max-w-2xl"
+      >
+        <ol>
+          <li class="mb-4 text-xl font-bold">SHAMBHAVI SHARMA:</li>
+          <ul class="list-disc ml-6 mb-4">
+            <li>PHONE - +91 98701 61355</li>
             <li>GMAIL - shambhavi.24544@sscbs.du.ac.in</li>
-        </ul>
-
-        <li style="font-size: 20px; padding-top: 20px;">APARA ARACHI:</li>
-        <ul type="square">
+          </ul>
+          <li class="mb-4 text-xl font-bold">APARA ARACHI:</li>
+          <ul class="list-disc ml-6">
             <li>PHONE - +91 8860061323</li>
-            <li>GMAIL - apara.24510@sscbs.du.ac.in </li>
-        </ul>
-        
-    
-    </ol>
-</div>
-</body>
+            <li>GMAIL - apara.24510@sscbs.du.ac.in</li>
+          </ul>
+        </ol>
+      </div>
+
+      <!-- Contact Form -->
+      <form
+        class="bg-white mt-10 p-6 rounded-lg shadow-lg w-[80%] max-w-2xl shadow-lg"
+      >
+        <h3 class="text-2xl font-bold mb-4">Get in Touch</h3>
+        <div class="mb-4">
+          <label for="name" class="block text-lg font-medium mb-1"
+            >Your Name</label
+          >
+          <input
+            type="text"
+            id="name"
+            class="w-full px-4 py-2 border rounded-lg"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-lg font-medium mb-1"
+            >Your Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="w-full px-4 py-2 border rounded-lg"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-lg font-medium mb-1"
+            >Your Message</label
+          >
+          <textarea
+            id="message"
+            rows="4"
+            class="w-full px-4 py-2 border rounded-lg"
+            placeholder="Enter your message"
+            required
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-600"
+        >
+          Send Message
+        </button>
+      </form>
+
+      <!-- Social Media Links -->
+      <div class="flex gap-4 mt-8">
+        <a href="#" class="text-3xl hover:text-gray-400"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="#" class="text-3xl hover:text-gray-400"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="#" class="text-3xl hover:text-gray-400"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="#" class="text-3xl hover:text-gray-400"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
+    </div>
+    <footer
+      style="
+        background-color: #f0c1e1;
+        color: black;
+        padding: 20px 0;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+      "
+    >
+      <div style="max-width: 1200px; margin: 0 auto; padding: 0 15px">
+        <p style="margin: 0; font-size: large">
+          © 2024 Summerizer. All Rights Reserved.
+        </p>
+        <div
+          style="
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <!-- Facebook Icon -->
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            aria-label="Facebook"
+            style="margin: 0 10px"
+          >
+            <img
+              src="./images/facebook.png"
+              alt="Facebook"
+              style="width: 40px; height: 40px; transition: transform 0.3s ease"
+              onmouseover="this.style.transform='scale(1.2)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </a>
+
+          <!-- Twitter Icon -->
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            aria-label="Twitter"
+            style="margin: 0 10px"
+          >
+            <img
+              src="./images/twitter.png"
+              alt="Twitter"
+              style="width: 40px; height: 40px; transition: transform 0.3s ease"
+              onmouseover="this.style.transform='scale(1.2)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
